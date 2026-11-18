@@ -379,7 +379,7 @@ body[data-layout="primary"] .grade-band-nav{justify-content:center}
 }
 /* Shared editorial hierarchy for both languages and both grade bands. */
 @media screen{
-html body:has(.slide){--deck-text:17px;--deck-title:32px;--deck-heading:21px;--control-bar-height:64px;font-family:Arial,sans-serif!important}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,29px);--deck-title:clamp(32px,2.7vw,51px);--deck-heading:clamp(23px,1.85vw,35px);--control-bar-height:64px;font-family:Arial,sans-serif!important}
 html body:has(.slide) main{max-width:1600px!important;width:100%!important;margin:auto!important;padding:0!important}
 html body:has(.slide) main .slide:not([hidden]){display:flex!important;flex-direction:column;justify-content:center!important;align-items:stretch!important;min-height:var(--primary-stage-height,calc(100dvh - 174px))!important;height:auto!important;padding:24px 36px!important;margin:0 auto!important;width:100%!important;gap:0!important}
 html body:has(.slide) main .slide[hidden]{display:none!important}
@@ -405,7 +405,7 @@ html body:has(.slide) main .slide .primary-definitions{margin:0 0 18px!important
 html body:has(.slide) main .slide .primary-stage-note{margin:12px 0 0!important;padding-top:12px!important}
 html body:has(.slide) main .slide .example{padding:14px 16px!important;margin:10px 0!important}
 html body:has(.slide) main .slide .cover-grid{min-height:0!important;gap:40px!important;align-items:center!important}
-html body:has(.slide) main .slide.cover h1{font-size:clamp(32px,2.8vw,46px)!important;line-height:1.12!important;margin-bottom:22px!important;color:#7848f5}
+html body:has(.slide) main .slide.cover h1{font-size:clamp(34px,3.15vw,58px)!important;line-height:1.12!important;margin-bottom:22px!important;color:#7848f5}
 html body:has(.slide) main .slide .cover-sub{font-size:23px!important;line-height:1.4!important;margin-bottom:20px!important}
 html body:has(.slide) main .slide .cover-list{padding-left:0!important;margin:16px 0 22px!important;gap:8px!important}
 html body:has(.slide) main .slide .cover-list li{margin:0!important}
@@ -414,12 +414,12 @@ html body:has(.slide) main .slide .steps li{display:list-item!important;padding:
 html body:has(.slide) main .slide .steps li::before{display:none!important}
 html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:10px 12px!important;vertical-align:top}
 html body:has(.slide) main .slide .checklist{list-style:none!important;padding:0!important}
-@media(min-width:1600px) and (min-height:850px){html body:has(.slide){--deck-text:20px;--deck-title:38px;--deck-heading:25px}html body:has(.slide) main .slide:not([hidden]){padding:30px 48px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three){gap:32px!important;margin-bottom:22px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:14px!important}}
-@media(max-width:1000px){html body:has(.slide){--deck-text:18px;--deck-title:30px;--deck-heading:22px}html body:has(.slide) main .slide:not([hidden]){justify-content:flex-start!important;padding:28px 24px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three,.intake-three-panels,.intake-data-panels){grid-template-columns:minmax(0,1fr)!important;display:grid!important;gap:22px!important}html body:has(.slide) main .slide .columns>div+div{padding-left:0!important;border-left:0!important}html body:has(.slide) main .slide h1{margin-bottom:24px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:13px!important}}
-@media(max-width:600px){html body:has(.slide){--deck-text:18px;--deck-title:28px;--deck-heading:22px}html body:has(.slide) main .slide:not([hidden]){padding:24px 18px!important}html body:has(.slide) main .slide .ustaz-primary-guide{padding:17px!important}html body:has(.slide) main .slide p,html body:has(.slide) main .slide li{overflow-wrap:anywhere}html body:has(.slide) main .slide .cover-grid{grid-template-columns:minmax(0,1fr)!important}html body:has(.slide) main .slide .cover-art{max-width:100%!important}html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:8px!important}html body:has(.slide) footer.nav{min-height:64px!important}}
+@media(min-width:1600px) and (min-height:850px){html body:has(.slide){--deck-text:clamp(24px,1.55vw,29px);--deck-title:clamp(42px,2.7vw,51px);--deck-heading:clamp(28px,1.85vw,35px)}html body:has(.slide) main .slide:not([hidden]){padding:30px 48px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three){gap:32px!important;margin-bottom:22px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:14px!important}}
+@media(max-width:1000px){html body:has(.slide){--deck-text:19px;--deck-title:32px;--deck-heading:23px}html body:has(.slide) main .slide:not([hidden]){justify-content:flex-start!important;padding:28px 24px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three,.intake-three-panels,.intake-data-panels){grid-template-columns:minmax(0,1fr)!important;display:grid!important;gap:22px!important}html body:has(.slide) main .slide .columns>div+div{padding-left:0!important;border-left:0!important}html body:has(.slide) main .slide h1{margin-bottom:24px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:13px!important}}
+@media(max-width:600px){html body:has(.slide){--deck-text:19px;--deck-title:30px;--deck-heading:23px}html body:has(.slide) main .slide:not([hidden]){padding:24px 18px!important}html body:has(.slide) main .slide .ustaz-primary-guide{padding:17px!important}html body:has(.slide) main .slide p,html body:has(.slide) main .slide li{overflow-wrap:anywhere}html body:has(.slide) main .slide .cover-grid{grid-template-columns:minmax(0,1fr)!important}html body:has(.slide) main .slide .cover-art{max-width:100%!important}html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:8px!important}html body:has(.slide) footer.nav{min-height:64px!important}}
 }
 @media screen and (min-width:1001px) and (max-height:950px){
-html body:has(.slide){--deck-text:16px;--deck-title:30px;--deck-heading:20px}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,24px);--deck-title:clamp(32px,2.7vw,44px);--deck-heading:clamp(23px,1.85vw,29px)}
 html body:has(.slide) main .slide:not([hidden]){padding:16px 32px!important}
 html body:has(.slide) main .slide h1{margin-bottom:16px!important}
 html body:has(.slide) main .slide :is(p,li,label,td,th,.intro,.callout,.example){line-height:1.3!important}
@@ -430,7 +430,7 @@ html body:has(.slide) main .slide .ustaz-primary-guide{padding:14px 16px!importa
 html body:has(.slide) main .slide .callout{padding:9px 13px!important;margin:9px 0!important}
 }
 @media screen and (min-width:1001px) and (max-height:950px){
-html body:has(.slide){--deck-text:15.5px;--deck-title:28px;--deck-heading:19px}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,24px);--deck-title:clamp(32px,2.7vw,44px);--deck-heading:clamp(23px,1.85vw,29px)}
 html body:has(.slide) main .slide:not([hidden]){padding:12px 32px!important}
 html body:has(.slide) main .slide :is(p,li,label,td,th,.intro,.callout,.example){line-height:1.26!important}
 html body:has(.slide) main .slide h1{margin-bottom:12px!important}
@@ -457,7 +457,114 @@ html body:has(.slide) main .slide .callout{padding:7px 11px!important;margin:6px
 @media screen{
 html body:has(.slide) main .slide>.action{align-self:flex-start!important}
 }
-@media screen and (min-width:1001px) and (min-height:801px) and (max-height:950px){html body:has(.slide){--deck-text:17px;--deck-title:32px;--deck-heading:21px}}
+@media screen and (min-width:1001px) and (min-height:801px) and (max-height:950px){html body:has(.slide){--deck-text:clamp(20px,1.6vw,25px);--deck-title:clamp(34px,2.7vw,46px);--deck-heading:clamp(24px,1.85vw,31px)}}
+
+@media screen {
+  html body:has(.slide) main .slide .action {
+    font-size:clamp(15px,1.2vw,21px)!important;
+  }
+  html body:has(.slide) dialog :is(p,li,td,th,pre,summary,blockquote) {
+    font-size:var(--deck-text)!important;
+    line-height:1.4!important;
+  }
+  html body:has(.slide) dialog h2 {
+    font-size:var(--deck-heading)!important;
+  }
+  html body:has(.slide) main .slide :is(.source,.small,.source p,.source a) {
+    font-size:clamp(13px,1vw,18px)!important;
+    color:#655771;
+  }
+}
+@media screen and (min-width:1001px) {
+  html body:has(.slide) main .slide.fit-content-slide {
+    --deck-text:clamp(19px,1.3vw,24px);
+    --deck-heading:clamp(23px,1.55vw,29px);
+  }
+  html body:has(.slide) main .slide.fit-content-slide .ustaz-guide-plain>li {
+    margin-bottom:7px!important;
+  }
+}
+@media screen and (min-width:1600px) {
+  html body:has(.slide) main,
+  html body:has(.slide) main .slide:not([hidden]) {
+    max-width:1840px!important;
+  }
+}
+@media screen {
+  html body footer.nav {
+    justify-content:center!important;
+    align-items:center!important;
+  }
+  html body footer.nav .nav-left {
+    justify-content:center!important;
+  }
+}
+@media screen and (min-width:1600px) and (min-height:951px) {
+  html body:has(.slide) main .slide.fit-content-slide:not([hidden]) {
+    padding-top:20px!important;
+    padding-bottom:20px!important;
+  }
+  html body:has(.slide) main .slide.fit-content-slide :is(p,li,.callout) {
+    line-height:1.28!important;
+  }
+}
+@media screen {
+  html[lang=kk] body main .cover .kk-cover-art {
+    container-type:inline-size;
+    isolation:isolate;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:1.14!important;
+    overflow:visible;
+    -webkit-mask-image:none;
+    mask-image:none;
+  }
+  html[lang=kk] .kk-cover-art::before,
+  html[lang=kk] .kk-cover-art::after {
+    content:"";
+    position:absolute;
+    inset:24% 6% 23%;
+    transform:rotate(-4deg);
+    border:1px solid #d7baff;
+    border-radius:50%;
+    z-index:-1;
+  }
+  html[lang=kk] .kk-cover-art::after {inset:30% 14% 29%}
+  html[lang=kk] .kk-cover-art .kk-orb {
+    width:46%;
+    height:auto;
+    aspect-ratio:1;
+    font-size:6.3cqw;
+    line-height:1.12;
+    background:radial-gradient(circle at 33% 22%,#d5acff 0%,#a261ff 14%,#7935e9 40%,#5424ab 73%,#281059 100%);
+    box-shadow:inset -10px -13px 27px #2b13588a,0 8px 45px #9c60ec55;
+    z-index:1;
+  }
+  html[lang=kk] .kk-cover-art .kk-orbit-label {
+    display:flex;
+    align-items:center;
+    gap:1.7cqw;
+    max-width:43%;
+    padding:2.2cqw 2.7cqw;
+    border:1px solid #eadbff;
+    border-radius:3.4cqw;
+    background:#fff;
+    color:#171329;
+    font-size:clamp(12px,3.6cqw,27px);
+    line-height:1.15;
+    box-shadow:0 3px 5px #7944bb26,0 9px 18px #7944bb29;
+    z-index:2;
+  }
+  html[lang=kk] .kk-orbit-label svg {width:6cqw;height:6cqw;flex:none;color:#6814ec}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(2) {inset:8% auto auto 11%}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(3) {inset:16% 11% auto auto}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(4) {inset:44% 0 auto auto}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(5) {inset:auto auto 13% 5%}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(6) {inset:auto 6% 8% auto}
+  html[lang=kk] .kk-cover-art:not(:has(.kk-orbit-label:nth-child(6))) .kk-orbit-label:nth-child(4) {inset:auto auto 12% 5%}
+  html[lang=kk] .kk-cover-art:not(:has(.kk-orbit-label:nth-child(6))) .kk-orbit-label:nth-child(5) {inset:auto 2% 7% auto}
+}
 </style></head><body data-layout="primary"><header class="deck-header"><div class="brand"><span>Ustaz BilimAI Mektep</span></div><div class="toolbar"><button id="tocBtn">Программа</button><button id="materialsBtn">Материалы</button><button id="fullBtn" aria-label="Полноэкранный режим">⛶ Экран</button><nav class="grade-band-nav" aria-label="Части презентации"><a href="index.html">Выбор части</a><a href="primary-1-4.html" aria-current="page">Часть 1 · 1–4 классы</a><a href="secondary-5-11.html">Часть 2 · 5–11 классы</a></nav></div><nav class="language-switch" aria-label="Тіл / Язык"><a href="primary-1-4.html" aria-current="page">RU</a><a href="primary-1-4-kk.html">ҚАЗ</a></nav></header><main><section class="slide cover                   " id="slide-1" data-min="1" data-start="0" data-block="1" aria-label="Слайд 1: Особенности разработки материалов для оценивания"><div class="cover-grid"><div class="cover-copy"><div class="cover-logo" role="img" aria-label="Bilim Group"></div><h1>Особенности разработки материалов для оценивания</h1><p class="cover-sub">с использованием плагина<br><strong>Ustaz BilimAI Mektep</strong></p><ul class="cover-list"><li>Задания для 1 класса</li><li>ФО и промежуточное оценивание, 2–4 классы</li><li>Итоговое оценивание</li><li>Проверка заданий и обратная связь</li><li>Траектория развития ученика</li></ul><div class="cover-actions"><button class="action" data-go="1">Начать вебинар →</button><button class="action speaker-open" data-open-dialog="speakerDialog" aria-haspopup="dialog">Спикер</button></div></div><div class="cover-art" role="img" aria-label="Ustaz BilimAI Mektep: ФО, промежуточное оценивание, анализ и работа над ошибками."></div></div><aside class="notes" hidden><b>Заметки ведущего · 1 мин</b><p>Часть 1: 1–4 классы. Особенности разработки материалов для оценивания. Используйте материалы этой ступени; для 1 класса — задания без баллов и отметок, для 2–4 — ФО и промежуточное оценивание. Итог за четверть и год рассматривается отдельно. Практические примеры иллюстративные.</p></aside></section>
 <section class="slide      alignment-slide primary-alignment              fit-content-slide" id="slide-2" data-min="2" data-start="1" data-block="1" aria-label="Слайд 2: Оценивание для 1–4 классов" hidden><div class="eyebrow">Блок 1 / Качество оценочного материала</div><h1>Оценивание для 1–4 классов</h1><div class="slide-body"><ul class="primary-definitions"><li><strong>Формативное оценивание</strong> — вид оценивания, который проводится в ходе повседневной работы в классе, является текущим показателем успеваемости обучающихся, обеспечивает оперативную взаимосвязь между обучающимся и учителем в ходе обучения, обратную связь между обучающимся и педагогом и позволяет совершенствовать образовательный процесс. <a href="https://adilet.zan.kz/rus/docs/V2600039896" target="_blank" rel="noopener">[п. 2, подп. 11]</a></li><li><strong>Промежуточное оценивание</strong> — вид оценивания обучающихся 2–4 классов, который определяет усвоение учебного материала по завершении изучения раздела (разделов) в соответствии с учебной программой. <a href="https://adilet.zan.kz/rus/docs/V2600039896" target="_blank" rel="noopener">[п. 2, подп. 2]</a></li><li><strong>Итоговое оценивание</strong> — вид оценивания обучающихся 2–4 классов, который проводится за четверть и за учебный год в порядке, предусмотренном настоящими Правилами. <a href="https://adilet.zan.kz/rus/docs/V2600039896" target="_blank" rel="noopener">[п. 2, подп. 8]</a></li></ul><div class="sequence alignment-questions"><div><b>01</b><h3>Цель обучения</h3><p class="principle-question">Какой ожидаемый результат задан учебной программой?</p><p class="clarification">ГОСО и учебная программа определяют знания, умения и навыки ученика. Для задания выбираем точную цель с учетом класса.</p></div><div><b>02</b><h3>Задание</h3><p class="principle-question">Какое выполнение покажет достижение этой цели?</p><p class="clarification">Короткая инструкция, доступный язык и необходимые опоры помогают ребенку показать знания и умения.</p></div><div><b>03</b><h3>Баллы за промежуточное оценивание</h3><p class="principle-question">Какой максимальный балл предусмотрен?</p><ul class="clarification primary-terms"><li><strong>2 класс — 12 баллов.</strong></li><li><strong>3 класс — 14 баллов.</strong></li><li><strong>4 класс — 16 баллов.</strong></li></ul><p class="clarification score-reference"><a href="https://adilet.zan.kz/rus/docs/V2600039896" target="_blank" rel="noopener">Правила № 125, п. 2-9</a></p><button class="action work-scores-trigger" id="workScoresBtn" aria-haspopup="dialog">Виды работ и баллы ↗</button></div></div><div class="primary-stage-note"><p><strong>1 класс:</strong> учебные достижения не оцениваются; баллы и отметки не выставляются.</p><p><strong>2–4 классы:</strong> формативное, промежуточное и итоговое оценивание. Итог за четверть — по результатам ФО и промежуточного оценивания.</p></div><p class="callout">До начала задания объясняем ребенку понятными словами, что нужно сделать и какой результат ожидается.</p><p class="source">Основания: <a href="https://adilet.zan.kz/rus/docs/V2600039896" target="_blank" rel="noopener">Правила № 125 в редакции приказа № 257-НҚ: п. 2(2, 8, 11), 2-1, 2-9, 2-14, 2-19</a>; <a href="https://uba.edu.kz/storage/app/media/888888%20RS%20RS.pdf#page=33" target="_blank" rel="noopener">ИМП 2026–2027, § 3.2, с. 33–37</a>. Определения под заголовком — п. 2, подп. 2, 8 и 11; максимальные баллы — п. 2-9.</p></div><aside class="notes" hidden><b>Заметки ведущего · 2 мин</b><p>За 1 минуту сопоставьте вопросы для двух ступеней. Проверено 19.10.2026 по официальному тексту приказа № 257-НҚ от 16.09.2026 (регистрация № 39896), изменяющего Правила № 125, и ИМП 2026–2027, раздел 3.2, с. 33–37. Пункт 2-1 устанавливает формативное, промежуточное и итоговое оценивание; в 1 классе учебные достижения не оцениваются. По п. 2-14 итог за четверть рассчитывается по результатам формативного и промежуточного оценивания. По п. 2-19 годовая оценка во 2–4 классах является средним арифметическим четвертных с округлением к ближайшему целому. ИМП, с. 35 и 37, прямо разъясняет: отдельная работа СОЧ не проводится. Важно: по п. 2-5 ФО во 2–4 классах оценивается от 1 до 10 баллов за урок; ИМП, с. 34, относит этот балл к совокупности работы за урок, а не отдельному заданию. Определения промежуточного и итогового оценивания перенесены непосредственно под заголовок. В пункте 03 указаны максимальные баллы за одну работу промежуточного оценивания по п. 2-9 Правил: 2 класс — 12; 3 класс — 14; 4 класс — 16. Определение критериев удалено по просьбе пользователя. Определения дескриптора и схемы баллов удалены по уточнению пользователя. Не переносить сюда определения схемы СОЧ из материалов для 5–11 классов. Таблица видов работ открывается кнопкой в блоке 03. Поясните за 1 минуту: форма работы зависит от предмета, максимум — от класса. Формы взяты из п. 2-7, максимумы из п. 2-9 Правил № 125 в редакции приказа № 257-НҚ. В ИМП 2026–2027 формы и максимумы приведены на с. 34–35; таблицы по предметам и количеству работ — на с. 39–41. Для иностранного языка ИМП приводит только 3 и 4 классы. Цифры 2, 3 или 1 в таблицах ИМП на с. 39–41 означают количество работ, а не баллы. Отдельного универсального распределения баллов между диктантом и заданиями эти положения не устанавливают; такое распределение не выдумывать. Формы работ в строках сгруппированы для краткости; полные требования смотреть в п. 2-7. Для последней группы также предусмотрены индивидуальные и командные формы. Материалы Алтынсарина отдельным файлом в текущей рабочей папке не найдены; таблица основана на официальных ИМП и приказе. Проверено 19.10.2026.</p></aside></section>
 <section class="slide         task-types-slide            fit-content-slide" id="slide-3" data-min="1" data-start="3" data-block="1" aria-label="Слайд 3: Разработка заданий: подходы, типы и алгоритм" hidden><div class="eyebrow">Блок 1 / Качество оценочного материала</div><h1>Разработка заданий: подходы, типы и алгоритм</h1><div class="slide-body"><div class="design-overview">

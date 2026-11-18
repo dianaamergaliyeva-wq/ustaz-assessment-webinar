@@ -318,7 +318,7 @@ html[lang=kk] .kk-content .steps{list-style:decimal!important;padding-left:22px!
 }
 /* Shared editorial hierarchy for both languages and both grade bands. */
 @media screen{
-html body:has(.slide){--deck-text:17px;--deck-title:32px;--deck-heading:21px;--control-bar-height:64px;font-family:Arial,sans-serif!important}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,29px);--deck-title:clamp(32px,2.7vw,51px);--deck-heading:clamp(23px,1.85vw,35px);--control-bar-height:64px;font-family:Arial,sans-serif!important}
 html body:has(.slide) main{max-width:1600px!important;width:100%!important;margin:auto!important;padding:0!important}
 html body:has(.slide) main .slide:not([hidden]){display:flex!important;flex-direction:column;justify-content:center!important;align-items:stretch!important;min-height:var(--primary-stage-height,calc(100dvh - 174px))!important;height:auto!important;padding:24px 36px!important;margin:0 auto!important;width:100%!important;gap:0!important}
 html body:has(.slide) main .slide[hidden]{display:none!important}
@@ -344,7 +344,7 @@ html body:has(.slide) main .slide .primary-definitions{margin:0 0 18px!important
 html body:has(.slide) main .slide .primary-stage-note{margin:12px 0 0!important;padding-top:12px!important}
 html body:has(.slide) main .slide .example{padding:14px 16px!important;margin:10px 0!important}
 html body:has(.slide) main .slide .cover-grid{min-height:0!important;gap:40px!important;align-items:center!important}
-html body:has(.slide) main .slide.cover h1{font-size:clamp(32px,2.8vw,46px)!important;line-height:1.12!important;margin-bottom:22px!important;color:#7848f5}
+html body:has(.slide) main .slide.cover h1{font-size:clamp(34px,3.15vw,58px)!important;line-height:1.12!important;margin-bottom:22px!important;color:#7848f5}
 html body:has(.slide) main .slide .cover-sub{font-size:23px!important;line-height:1.4!important;margin-bottom:20px!important}
 html body:has(.slide) main .slide .cover-list{padding-left:0!important;margin:16px 0 22px!important;gap:8px!important}
 html body:has(.slide) main .slide .cover-list li{margin:0!important}
@@ -353,12 +353,12 @@ html body:has(.slide) main .slide .steps li{display:list-item!important;padding:
 html body:has(.slide) main .slide .steps li::before{display:none!important}
 html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:10px 12px!important;vertical-align:top}
 html body:has(.slide) main .slide .checklist{list-style:none!important;padding:0!important}
-@media(min-width:1600px) and (min-height:850px){html body:has(.slide){--deck-text:20px;--deck-title:38px;--deck-heading:25px}html body:has(.slide) main .slide:not([hidden]){padding:30px 48px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three){gap:32px!important;margin-bottom:22px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:14px!important}}
-@media(max-width:1000px){html body:has(.slide){--deck-text:18px;--deck-title:30px;--deck-heading:22px}html body:has(.slide) main .slide:not([hidden]){justify-content:flex-start!important;padding:28px 24px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three,.intake-three-panels,.intake-data-panels){grid-template-columns:minmax(0,1fr)!important;display:grid!important;gap:22px!important}html body:has(.slide) main .slide .columns>div+div{padding-left:0!important;border-left:0!important}html body:has(.slide) main .slide h1{margin-bottom:24px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:13px!important}}
-@media(max-width:600px){html body:has(.slide){--deck-text:18px;--deck-title:28px;--deck-heading:22px}html body:has(.slide) main .slide:not([hidden]){padding:24px 18px!important}html body:has(.slide) main .slide .ustaz-primary-guide{padding:17px!important}html body:has(.slide) main .slide p,html body:has(.slide) main .slide li{overflow-wrap:anywhere}html body:has(.slide) main .slide .cover-grid{grid-template-columns:minmax(0,1fr)!important}html body:has(.slide) main .slide .cover-art{max-width:100%!important}html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:8px!important}html body:has(.slide) footer.nav{min-height:64px!important}}
+@media(min-width:1600px) and (min-height:850px){html body:has(.slide){--deck-text:clamp(24px,1.55vw,29px);--deck-title:clamp(42px,2.7vw,51px);--deck-heading:clamp(28px,1.85vw,35px)}html body:has(.slide) main .slide:not([hidden]){padding:30px 48px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three){gap:32px!important;margin-bottom:22px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:14px!important}}
+@media(max-width:1000px){html body:has(.slide){--deck-text:19px;--deck-title:32px;--deck-heading:23px}html body:has(.slide) main .slide:not([hidden]){justify-content:flex-start!important;padding:28px 24px!important}html body:has(.slide) main .slide :is(.columns,.sequence,.three,.intake-three-panels,.intake-data-panels){grid-template-columns:minmax(0,1fr)!important;display:grid!important;gap:22px!important}html body:has(.slide) main .slide .columns>div+div{padding-left:0!important;border-left:0!important}html body:has(.slide) main .slide h1{margin-bottom:24px!important}html body:has(.slide) main .slide :is(.source,.small){font-size:13px!important}}
+@media(max-width:600px){html body:has(.slide){--deck-text:19px;--deck-title:30px;--deck-heading:23px}html body:has(.slide) main .slide:not([hidden]){padding:24px 18px!important}html body:has(.slide) main .slide .ustaz-primary-guide{padding:17px!important}html body:has(.slide) main .slide p,html body:has(.slide) main .slide li{overflow-wrap:anywhere}html body:has(.slide) main .slide .cover-grid{grid-template-columns:minmax(0,1fr)!important}html body:has(.slide) main .slide .cover-art{max-width:100%!important}html body:has(.slide) main .slide th,html body:has(.slide) main .slide td{padding:8px!important}html body:has(.slide) footer.nav{min-height:64px!important}}
 }
 @media screen and (min-width:1001px) and (max-height:950px){
-html body:has(.slide){--deck-text:16px;--deck-title:30px;--deck-heading:20px}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,24px);--deck-title:clamp(32px,2.7vw,44px);--deck-heading:clamp(23px,1.85vw,29px)}
 html body:has(.slide) main .slide:not([hidden]){padding:16px 32px!important}
 html body:has(.slide) main .slide h1{margin-bottom:16px!important}
 html body:has(.slide) main .slide :is(p,li,label,td,th,.intro,.callout,.example){line-height:1.3!important}
@@ -369,7 +369,7 @@ html body:has(.slide) main .slide .ustaz-primary-guide{padding:14px 16px!importa
 html body:has(.slide) main .slide .callout{padding:9px 13px!important;margin:9px 0!important}
 }
 @media screen and (min-width:1001px) and (max-height:950px){
-html body:has(.slide){--deck-text:15.5px;--deck-title:28px;--deck-heading:19px}
+html body:has(.slide){--deck-text:clamp(19px,1.55vw,24px);--deck-title:clamp(32px,2.7vw,44px);--deck-heading:clamp(23px,1.85vw,29px)}
 html body:has(.slide) main .slide:not([hidden]){padding:12px 32px!important}
 html body:has(.slide) main .slide :is(p,li,label,td,th,.intro,.callout,.example){line-height:1.26!important}
 html body:has(.slide) main .slide h1{margin-bottom:12px!important}
@@ -396,7 +396,114 @@ html body:has(.slide) main .slide .callout{padding:7px 11px!important;margin:6px
 @media screen{
 html body:has(.slide) main .slide>.action{align-self:flex-start!important}
 }
-@media screen and (min-width:1001px) and (min-height:801px) and (max-height:950px){html body:has(.slide){--deck-text:17px;--deck-title:32px;--deck-heading:21px}}
+@media screen and (min-width:1001px) and (min-height:801px) and (max-height:950px){html body:has(.slide){--deck-text:clamp(20px,1.6vw,25px);--deck-title:clamp(34px,2.7vw,46px);--deck-heading:clamp(24px,1.85vw,31px)}}
+
+@media screen {
+  html body:has(.slide) main .slide .action {
+    font-size:clamp(15px,1.2vw,21px)!important;
+  }
+  html body:has(.slide) dialog :is(p,li,td,th,pre,summary,blockquote) {
+    font-size:var(--deck-text)!important;
+    line-height:1.4!important;
+  }
+  html body:has(.slide) dialog h2 {
+    font-size:var(--deck-heading)!important;
+  }
+  html body:has(.slide) main .slide :is(.source,.small,.source p,.source a) {
+    font-size:clamp(13px,1vw,18px)!important;
+    color:#655771;
+  }
+}
+@media screen and (min-width:1001px) {
+  html body:has(.slide) main .slide.fit-content-slide {
+    --deck-text:clamp(19px,1.3vw,24px);
+    --deck-heading:clamp(23px,1.55vw,29px);
+  }
+  html body:has(.slide) main .slide.fit-content-slide .ustaz-guide-plain>li {
+    margin-bottom:7px!important;
+  }
+}
+@media screen and (min-width:1600px) {
+  html body:has(.slide) main,
+  html body:has(.slide) main .slide:not([hidden]) {
+    max-width:1840px!important;
+  }
+}
+@media screen {
+  html body footer.nav {
+    justify-content:center!important;
+    align-items:center!important;
+  }
+  html body footer.nav .nav-left {
+    justify-content:center!important;
+  }
+}
+@media screen and (min-width:1600px) and (min-height:951px) {
+  html body:has(.slide) main .slide.fit-content-slide:not([hidden]) {
+    padding-top:20px!important;
+    padding-bottom:20px!important;
+  }
+  html body:has(.slide) main .slide.fit-content-slide :is(p,li,.callout) {
+    line-height:1.28!important;
+  }
+}
+@media screen {
+  html[lang=kk] body main .cover .kk-cover-art {
+    container-type:inline-size;
+    isolation:isolate;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:1.14!important;
+    overflow:visible;
+    -webkit-mask-image:none;
+    mask-image:none;
+  }
+  html[lang=kk] .kk-cover-art::before,
+  html[lang=kk] .kk-cover-art::after {
+    content:"";
+    position:absolute;
+    inset:24% 6% 23%;
+    transform:rotate(-4deg);
+    border:1px solid #d7baff;
+    border-radius:50%;
+    z-index:-1;
+  }
+  html[lang=kk] .kk-cover-art::after {inset:30% 14% 29%}
+  html[lang=kk] .kk-cover-art .kk-orb {
+    width:46%;
+    height:auto;
+    aspect-ratio:1;
+    font-size:6.3cqw;
+    line-height:1.12;
+    background:radial-gradient(circle at 33% 22%,#d5acff 0%,#a261ff 14%,#7935e9 40%,#5424ab 73%,#281059 100%);
+    box-shadow:inset -10px -13px 27px #2b13588a,0 8px 45px #9c60ec55;
+    z-index:1;
+  }
+  html[lang=kk] .kk-cover-art .kk-orbit-label {
+    display:flex;
+    align-items:center;
+    gap:1.7cqw;
+    max-width:43%;
+    padding:2.2cqw 2.7cqw;
+    border:1px solid #eadbff;
+    border-radius:3.4cqw;
+    background:#fff;
+    color:#171329;
+    font-size:clamp(12px,3.6cqw,27px);
+    line-height:1.15;
+    box-shadow:0 3px 5px #7944bb26,0 9px 18px #7944bb29;
+    z-index:2;
+  }
+  html[lang=kk] .kk-orbit-label svg {width:6cqw;height:6cqw;flex:none;color:#6814ec}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(2) {inset:8% auto auto 11%}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(3) {inset:16% 11% auto auto}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(4) {inset:44% 0 auto auto}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(5) {inset:auto auto 13% 5%}
+  html[lang=kk] .kk-cover-art .kk-orbit-label:nth-child(6) {inset:auto 6% 8% auto}
+  html[lang=kk] .kk-cover-art:not(:has(.kk-orbit-label:nth-child(6))) .kk-orbit-label:nth-child(4) {inset:auto auto 12% 5%}
+  html[lang=kk] .kk-cover-art:not(:has(.kk-orbit-label:nth-child(6))) .kk-orbit-label:nth-child(5) {inset:auto 2% 7% auto}
+}
 </style></head><body><header class="deck-header"><div class="brand"><span>Ustaz BilimAI Mektep</span></div><div class="toolbar"><button id="tocBtn">Программа</button><button id="materialsBtn">Материалы</button><button id="fullBtn" aria-label="Полноэкранный режим">⛶ Экран</button><nav class="grade-band-nav" aria-label="Части презентации"><a href="index.html">Выбор части</a><a href="primary-1-4.html">Часть 1 · 1–4 классы</a><a href="secondary-5-11.html" aria-current="page">Часть 2 · 5–11 классы</a></nav></div><nav class="language-switch" aria-label="Тіл / Язык"><a href="secondary-5-11.html" aria-current="page">RU</a><a href="secondary-5-11-kk.html">ҚАЗ</a></nav></header><main><section class="slide cover                   " id="slide-1" data-min="1" data-start="0" data-block="1" aria-label="Слайд 1: Особенности разработки материалов для оценивания"><div class="cover-grid"><div class="cover-copy"><div class="cover-logo" role="img" aria-label="Bilim Group"></div><h1>Особенности разработки материалов для оценивания</h1><p class="cover-sub">с использованием плагина<br><strong>Ustaz BilimAI Mektep</strong></p><ul class="cover-list"><li>Разработка ФО, СОР и СОЧ</li><li>Спецификация</li><li>Проверка и модерация работ</li><li>Анализ результатов СОР и СОЧ</li><li>Траектория развития ученика</li></ul><div class="cover-actions"><button class="action" data-go="1">Начать вебинар →</button><button class="action speaker-open" data-open-dialog="speakerDialog" aria-haspopup="dialog">Спикер</button></div></div><div class="cover-art" role="img" aria-label="Ustaz BilimAI Mektep: ФО, СОР, СОЧ, анализ и модерация."></div></div><aside class="notes" hidden><b>Заметки ведущего · 1 мин</b><p>Представьте тему. Участники работают со своими предметами, а сквозной учебный пример помогает увидеть методику. Объясните навигацию: стрелки, меню программы, шаблоны запросов, заметки ведущего.</p></aside></section>
 <section class="slide      alignment-slide               fit-content-slide" id="slide-2" data-min="1" data-start="1" data-block="1" aria-label="Слайд 2: Оценивание для 5–11 классов" hidden><div class="eyebrow">Блок 1 / Качество оценочного материала</div><h1>Оценивание для 5–11 классов</h1><div class="slide-body"><div class="sequence alignment-questions"><div><b>01</b><h3>Цель обучения</h3><p class="principle-question">Какой ожидаемый результат задан учебной программой?</p><p class="clarification">ГОСО и учебная программа определяют, какими знаниями, умениями и навыками должен обладать ученик по итогам обучения.</p></div><div><b>02</b><h3>Задание</h3><p class="principle-question">Какое выполнение покажет достижение этой цели?</p><p class="clarification">Задание связано с целью и позволяет увидеть применение знаний, способ действий или рассуждение ученика.</p></div><div><b>03</b><h3>Критерии оценивания</h3><p class="principle-question">По каким признакам определяем достижение цели?</p><ul class="clarification assessment-terms"><li><strong>Критерии оценивания</strong> — признаки, на основании которых производится оценка учебных достижений обучающихся. <a href="https://adilet.zan.kz/rus/docs/V1700015233" target="_blank" rel="noopener" aria-label="Источник определения критериев: Правила к приказу 125, редакция 2017 года">[1]</a></li><li><strong>Дескриптор</strong> — характеристика, описывающая уровень или качество выполненной обучающимся работы по заданию. <a href="https://www.uba.edu.kz/storage/app/media/2023%20%D3%99%D0%BD%D1%85/%20%D0%BD%D0%B0%202023-2024%20%D1%83%D1%87%20%D0%B3%D0%BE%D0%B4.pdf#page=98" target="_blank" rel="noopener" aria-label="Источник определения дескриптора: ИМП 2023–2024, страница 98">[2]</a></li><li><strong>Схема выставления баллов</strong> — схема, используемая учителями для установления единых норм по выставлению баллов к заданиям суммативного оценивания за четверть. <a href="https://www.uba.edu.kz/storage/app/media/Metod%20usynymdama/2018/%20%D0%9F%D0%9E%20%D0%9F%D0%A0%D0%9E%D0%A6%D0%95%D0%94%D0%A3%D0%A0%D0%90%D0%9C%20%20%D0%9A%D0%A0%D0%98%D0%A2%D0%95%D0%A0%D0%98%D0%90%D0%9B%D0%AC%D0%9D%D0%9E%D0%93%D0%9E.pdf#page=9" target="_blank" rel="noopener" aria-label="Источник определения схемы: НАО 2018, раздел 1.3.1, пункт 16">[3]</a></li></ul></div></div><p class="callout">До начала выполнения задания ученик знакомится с критериями и условиями оценивания и понимает, что нужно показать в работе.</p><p class="alignment-note">Источники терминов: [1] Правила к приказу № 125, п. 2, подп. 2 (ред. 2017); [2] ИМП 2023–2024, с. 98; [3] НАО, 2018, § 1.3.1, п. 16, с. 9.</p><p class="source">Основания: <a href="https://adilet.zan.kz/rus/docs/V1600013137" target="_blank" rel="noopener">приказ № 52, п. 2</a>; <a href="https://adilet.zan.kz/rus/docs/V1700015233" target="_blank" rel="noopener">приказ № 265, редакция 2017 года, п. 2 Правил</a>; <a href="https://uba.edu.kz/storage/app/media/888888%20RS%20RS.pdf#page=8" target="_blank" rel="noopener">ИМП 2026–2027, с. 8, 33–34</a>.</p></div><aside class="notes" hidden><b>Заметки ведущего · 1 мин</b><p>За 2 минуты обсудите ожидаемые результаты и различия критерия, дескриптора и схемы баллов для 5–11 классов. До начала работы познакомьте ученика с условиями оценивания. При подготовке СОЧ следуйте спецификации, не добавляйте отдельные дескрипторы автоматически. Определения на слайде приведены с указанием типа источника: критерии оценивания — по п. 2, подп. 2 Правил к приказу № 125 в редакции приказа № 265 от 06.06.2017; дескриптор — дословно по ИМП 2023–2024, с. 98; схема выставления баллов — дословно по методическим рекомендациям НАО 2018, § 1.3.1, п. 16, с. 9. В проверенном перечне определений Правил 2017 года отдельных определений дескриптора и схемы выставления баллов нет. Эти два методических определения не обозначать как цитаты из приказа. Исторические источники используются здесь для терминов, а не как действующий порядок оценивания. Для СОЧ вместо отдельных дескрипторов использовать ожидаемые ответы и условия начисления баллов по спецификации. Официальная основа: приказ № 52 от 21.01.2016, п. 2 — цели связаны с ожидаемыми знаниями, пониманием и навыками, критериальное оценивание сопоставляет достижения с заранее известными критериями. Ссылка пользователя V1700015233 — приказ № 265 от 06.06.2017 об изменении приказа № 125. В п. 2 Правил редакции 2017 года определены оценивание, критерии и ожидаемые результаты. Это историческая редакция, ее условия проведения оценивания нельзя автоматически переносить на 2026–2027 год. Полный текст старой редакции проверен по копии в официальной системе организаций образования kargoo.kz/files/loader/1645006656376.pdf, поскольку веб-выдача Әділет требовала JavaScript. ИМП 2026–2027 на официальном сайте Академии: с. 8 рекомендует опираться на цели и содержание программ при разработке оценочных материалов, с. 33–34 связывает оценивание с целями и критериями. Раздел 3.2 относится к 2–4 классам. Три пункта с вопросами и уточнениями — методическое обобщение, а не установленная документом обязательная последовательность. Для актуальных процедур используют действующую редакцию приказа № 125. Проверено 19.10.2026.</p></aside></section>
 <section class="slide         task-types-slide            fit-content-slide" id="slide-3" data-min="1" data-start="2" data-block="1" aria-label="Слайд 3: Разработка заданий: подходы, типы и алгоритм" hidden><div class="eyebrow">Блок 1 / Качество оценочного материала</div><h1>Разработка заданий: подходы, типы и алгоритм</h1><div class="slide-body"><div class="design-overview">
